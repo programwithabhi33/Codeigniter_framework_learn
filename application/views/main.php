@@ -11,9 +11,9 @@
 <body>
     <table>
         <tr>
-            <td>Sno</td>
-            <td>Name</td>
-            <td>Id</td>
+            <td><pre><h3>Sno</h3>Sno    </pre></td>
+            <td><pre>Name    </pre></td>
+            <td><pre>Id    </pre></td>
         </tr>
         <?php
         // Accessing the $users key to $data array
