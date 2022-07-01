@@ -27,6 +27,9 @@ class Welcome extends CI_Controller {
 		$data['users']= $this->User_model->getdata();
 		// echo "<pre>";
 
+		print_r($data);
+		echo "<br>";
+
 
 		// Loading the main view template
 		// When a array is passed to view the keys of an array is passed insted of the array.In line no 27 we defined the user as a key to the $data array,the user key store the return the value in his value, when you passed the $data array the key will be passed to view (you can define multiple keys )
