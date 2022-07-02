@@ -21,9 +21,9 @@
         foreach ($users as $user) {
 
             echo ' <tr>
-            // <td>' . $user['sno'] . '</td>
+            <td>' . $user['sno'] . '</td>
             <td>' . $user['name'] . '</td>
-            // <td>' . $user['id'] . '</td>
+            <td>' . $user['id'] . '</td>
          </tr>';
         }
         print_r($users);

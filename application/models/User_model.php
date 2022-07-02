@@ -18,7 +18,8 @@ class User_model extends CI_Model{
         // $data = $this->db->get("users");
 
         // Method chaining
-        $data = $this->db->select('sno','name','id')->where('sno',2)->get('users');
+        // $data = $this->db->select('name')->where('sno',2)->get('users');
+        $data = $this->db->where('sno',2)->get('users');
 
         // Limit query first argument is table name and second argument is the limit object and third is array index
         // $data = $this->db->get("users",2,1);

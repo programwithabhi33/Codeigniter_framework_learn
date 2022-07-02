@@ -69,6 +69,7 @@ class CI_Calendar {
 	 * Day of the week to start the calendar on
 	 *
 	 * @var string
+	 * 
 	 */
 	public $start_day = 'sunday';
 
