@@ -2,7 +2,8 @@
 
 class User_model extends CI_Model{
     public function getdata (){
-        $this->load->database();
+        // You can load database library in autoload.php 
+        // $this->load->database();
         // Here accesssing the database functions 
         // The db->query returns a object store in the data varible
         // $data = $this->db->query("select * from users");
@@ -19,7 +20,9 @@ class User_model extends CI_Model{
 
         // Method chaining
         // $data = $this->db->select('name')->where('sno',2)->get('users');
-        $data = $this->db->where('sno',2)->get('users');
+        // $data = $this->db->where('sno',1)->get('users');
+
+        $data = $this->db->get('users');
 
         // Limit query first argument is table name and second argument is the limit object and third is array index
         // $data = $this->db->get("users",2,1);
