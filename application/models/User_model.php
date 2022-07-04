@@ -15,6 +15,8 @@ class User_model extends CI_Model{
         // $this->db->where("sno",2);
 
         // $this->db->select_min('sno');
+
+        
         
         // $data = $this->db->get("users");
 

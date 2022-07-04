@@ -34,18 +34,27 @@ class Welcome extends CI_Controller {
 		// $this->load->library('cart');
 
 		// Loading the custom libraries 
-		$this->load->library('test');
-		$this->test->abhi();
+		// You can also load this library in autoload.php
+		// $this->load->library('test');
+		// $this->test->abhi();
+		// echo "<br>";
+
+
+		// Loading the custom libraries for add functions or overwrite in existing library 
+		// You can also load this library in autoload.php
+		$this->load->library('email');
+		$this->email->show();
 		echo "<br>";
+		
 
 		// Loading multiple libraries with array 
 		// $this->load->library(array('cart','driver'));
 
 		// Loading the system helper functions Note: you can overwrite or add system helper functions with adding the my_ before the file and save the file in application folder 
 		// $this->load->helper('array');
-		$this->load->helper('abhi');
-		abhishek();
-		echo "<br>";
+		// $this->load->helper('abhi');
+		// abhishek();
+		// echo "<br>";
 
 
 		// Loading the main view template
