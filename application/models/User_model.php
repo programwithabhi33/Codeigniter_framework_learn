@@ -14,20 +14,20 @@ class User_model extends CI_Model{
         // Where condition in active class, select where sno is 2 in database column and returns in db object
         // $this->db->where("sno",2);
 
-        // $this->db->select_min('sno');
+        $this->db->select_min('sno');
 
         
         
-        // $data = $this->db->get("users");
+        $data = $this->db->get("users");
 
         // Method chaining
         // $data = $this->db->select('name')->where('sno',2)->get('users');
         // $data = $this->db->where('sno',1)->get('users');
 
-        $data = $this->db->get('users');
+        // $data = $this->db->get('users');
 
         // Limit query first argument is table name and second argument is the limit object and third is array index
-        // $data = $this->db->get("users",2,1);
+        // $data = $this->db->get("users",3,0);
 
         // You can call or reutrn the data object corresponding function or methods
         // The result function return the multiple objects in single array

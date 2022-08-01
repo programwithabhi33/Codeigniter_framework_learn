@@ -55,3 +55,4 @@ $route['translate_uri_dashes'] = FALSE;
 
 // Added the custom url route for testing
 $route['abhi/shek'] = 'Abhi/index';
+$route['abhi/biranje'] = 'modules/abhi/main/abhishek';

@@ -22,8 +22,8 @@
 
             echo ' <tr>
             <td>' . $user['sno'] . '</td>
-            <td>' . $user['name'] . '</td>
-            <td>' . $user['id'] . '</td>
+            // <td>' . $user['name'] . '</td>
+            // <td>' . $user['id'] . '</td>
          </tr>';
         }
         print_r($users);
