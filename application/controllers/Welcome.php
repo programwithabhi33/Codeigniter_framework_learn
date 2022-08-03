@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Welcome extends my_controller {
+class Welcome extends abhiController {
 
 	/**
 	 * Index Page for this controller.
@@ -20,7 +20,8 @@ class Welcome extends my_controller {
 	 */
 	public function index()
 	{
-		$this->abhi();
+		// $this->mainThing();
+		$this->toThing();
 		// Loading the model here this returns object with the same name of the model class
 		$this->load->model('User_model');
 
@@ -64,7 +65,6 @@ class Welcome extends my_controller {
 	} 
 	public function demo()
 	{
-		echo 'Abhishek is a good programmer';
 		
 	}
 

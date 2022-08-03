@@ -1,7 +1,10 @@
 <?php
 
-class User_model extends CI_Model{
+class User_model extends programwithabhi{
     public function getdata (){
+        // $this->testThing();
+        $this->pwa();
+       
         // You can load database library in autoload.php 
         // $this->load->database();
         // Here accesssing the database functions 
@@ -14,17 +17,21 @@ class User_model extends CI_Model{
         // Where condition in active class, select where sno is 2 in database column and returns in db object
         // $this->db->where("sno",2);
 
-        $this->db->select_min('sno');
+        // $this->db->select_min('sno');
 
         
         
-        $data = $this->db->get("users");
+        // $data = $this->db->get("users");
+        // $this->load->library('email');
+        // $this->email->show();
+        // die();
+
 
         // Method chaining
         // $data = $this->db->select('name')->where('sno',2)->get('users');
         // $data = $this->db->where('sno',1)->get('users');
 
-        // $data = $this->db->get('users');
+        $data = $this->db->get('users');
 
         // Limit query first argument is table name and second argument is the limit object and third is array index
         // $data = $this->db->get("users",3,0);
